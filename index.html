@@ -1,25 +1,20 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>GigU - Conecta, Colabora y Crea</title>
-  <link rel="stylesheet" href="styles.css">
-  <!-- Fuente Poppins -->
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
-  <style>
-    html {
-      scroll-behavior: smooth; /* 👈 scroll suave */
-    }
-  </style>
+  <link rel="stylesheet" href="styles.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700;800&display=swap" rel="stylesheet" />
+  <style>html { scroll-behavior: smooth; }</style>
 </head>
 <body>
   <!-- Navbar -->
   <header class="navbar">
     <div class="container">
-    <a href="#inicio" class="logo">
-        <img src="assets/GigU_Typo_2.png" alt="GigU Logo">
-    </a>
+      <a href="#inicio" class="logo">
+        <img src="assets/GigU_Typo_2.png" alt="GigU" />
+      </a>
       <nav>
         <ul class="nav-links">
           <li><a href="#inicio">Inicio</a></li>
@@ -36,19 +31,32 @@
   <!-- Hero -->
   <section class="hero" id="inicio">
     <div class="hero-overlay">
-      <div class="hero-content">
-        <h2>Conecta, Colabora y Crea</h2>
-        <p>GigU es la plataforma donde estudiantes, freelancers y pequeños emprendimientos se encuentran para crear proyectos.</p>
-        <a href="#servicios" class="btn primary-btn">Explora Más</a>
+      <div class="container hero-grid">
+        <div class="hero-text">
+          <p class="eyebrow">Somos</p>
+          <h1 class="display">GigU</h1>
+          <p class="lead">
+            Conectamos talento emergente con negocios reales para crear, colaborar y crecer.
+          </p>
+          <div class="hero-buttons">
+            <a href="#nosotros" class="btn secondary-btn">Explora Más</a>
+            <a href="#contacto" class="btn ghost-btn">Contáctanos</a>
+          </div>
+        </div>
+        <div class="hero-logo">
+          <img src="assets/GigU_Short.png" alt="GigU Logo grande" />
+        </div>
       </div>
     </div>
   </section>
 
-  <!-- Why Choose -->
+  <!-- Why -->
   <section class="why">
     <div class="container">
-      <h3>¿Por qué elegir GigU?</h3>
-      <p>Porque conectamos talento emergente con negocios que buscan soluciones reales. Creamos una comunidad donde todos crecen.</p>
+      <h3 class="section-title">¿Por qué elegir GigU?</h3>
+      <p class="section-subtitle">
+        Conectamos talento emergente con negocios que buscan soluciones reales. Creamos una comunidad donde todos crecen.
+      </p>
       <div class="why-grid">
         <div class="why-item"><strong>Encuentra proyectos o el equipo que necesitas</strong></div>
         <div class="why-item"><strong>Ambiente seguro y enfocado en colaboración</strong></div>
@@ -61,13 +69,12 @@
   <section class="about" id="nosotros">
     <div class="container about-grid">
       <div class="about-text">
-        <h3>Sobre Nosotros</h3>
+        <h3 class="section-title">Sobre Nosotros</h3>
         <p>GigU nace para apoyar el talento joven y los pequeños emprendimientos. Somos un puente entre freelancers apasionados y quienes buscan impulsar sus ideas.</p>
-        <p>Creemos en la colaboración como motor del progreso. Aquí, todos tienen un espacio para crecer y aportar.<br>
-        Nuestra misión es simple, ayudar a construir relaciones laborales significativas y exitosas.</p>
+        <p>Creemos en la colaboración como motor del progreso. Aquí, todos tienen un espacio para crecer y aportar. Nuestra misión es simple: ayudar a construir relaciones laborales significativas y exitosas.</p>
       </div>
       <div class="about-img">
-        <img src="assets/About.png" alt="Preview">
+        <img src="assets/About.png" alt="Preview" />
       </div>
     </div>
   </section>
@@ -75,13 +82,13 @@
   <!-- Services -->
   <section class="services" id="servicios">
     <div class="container">
-      <h3>¿Qué puedes hacer en GigU?</h3>
+      <h3 class="section-title text-on-dark">¿Qué puedes hacer en GigU?</h3>
       <div class="services-grid">
         <div class="service-card">
           <h4>Publicar o tomar proyectos</h4>
-          <p>Encuentra talento o trabaja en desafíos reales según tus habilidades</p>
+          <p>Encuentra talento o trabaja en desafíos reales según tus habilidades.</p>
         </div>
-        <div class="service-card active" style="color: white;">
+        <div class="service-card active">
           <h4>Mostrar tu portafolio</h4>
           <p>Demuestra tu experiencia, habilidades y conecta con nuevos clientes.</p>
         </div>
@@ -94,9 +101,9 @@
   </section>
 
   <!-- Clients -->
-  <section class="clients" id="clientes" style="color: white;">
+  <section class="clients" id="clientes">
     <div class="container">
-      <h3>Emprendimientos y freelancers que ya forman parte de nuestra red</h3>
+      <h3 class="section-title text-on-dark">Emprendimientos y freelancers que ya forman parte de nuestra red</h3>
       <div class="clients-grid">
         <div class="client-card"><span>Client Name</span><br><img src="https://www.google.com/images/branding/googlelogo/2x/googlelogo_color_160x56dp.png" alt="Google"></div>
         <div class="client-card"><span>Client Name</span><br><img src="https://www.google.com/images/branding/googlelogo/2x/googlelogo_color_160x56dp.png" alt="Google"></div>
@@ -109,8 +116,14 @@
   <!-- Footer -->
   <footer id="contacto">
     <div class="container">
-      <p><strong>¿Tienes una idea o proyecto?</strong> Colaboremos y hagámoslo realidad juntos. Un miembro de nuestro equipo te responderá pronto. Escríbenos por WhatsApp</p>
-      <p class="footer-team">Facebook &nbsp;&nbsp; Instagram &nbsp;&nbsp; Linkedin &nbsp;&nbsp; Youtube &nbsp;&nbsp;</p>
+      <p><strong>¿Tienes una idea o proyecto?</strong> Colaboremos y hagámoslo realidad juntos. Escríbenos por WhatsApp.</p>
+      <p class="footer-team">
+        <span>Facebook</span>&nbsp;&nbsp;
+        <span>Instagram</span>&nbsp;&nbsp;
+        <span>Linkedin</span>&nbsp;&nbsp;
+        <span>Youtube</span>
+      </p>
+
     </div>
   </footer>
 
